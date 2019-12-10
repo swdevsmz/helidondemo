@@ -36,3 +36,16 @@ mvn package
 ```
 java -jar target/helidon-quickstart-mp.jar
 ```
+
+動作確認
+
+```
+curl -s -X GET http://localhost:8080/health
+```
+```
+curl -s -X GET http://localhost:8080/metrics
+```
+JSON
+```
+curl -H 'Accept: application/json' -X GET http://localhost:8080/metrics
+```
